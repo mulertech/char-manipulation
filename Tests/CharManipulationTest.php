@@ -16,11 +16,19 @@ class CharManipulationTest extends TestCase
         );
         static::assertEquals('Test trim', CharManipulation::specialCharsTrim(' Test trim '));
         static::assertEquals(
-            ['Test trim', 'with', 'array', 'and', 'null', null],
+            ['Test &quot;trim&quot;', 'with', 'array', 'and', 'null', null],
             CharManipulation::specialCharsTrim(
-                [' Test trim', '<script\>with</script>', ' array  ', ' and', 'null ', null]
+                [' Test "trim"', '<script\>with</script>', ' array  ', ' and', 'null ', null]
             )
         );
+    }
+
+    public function testSpecialCharsTrimAndDecode()
+    {
+        $test = CharManipulation::specialCharsTrim("'test single quote");
+        static::assertEquals('&#039;test single quote', $test);
+        CharManipulation::specialCharsDecode($test);
+        static::assertEquals("'test single quote", $test);
     }
 
     public function testSpecialCharsDecodeString()

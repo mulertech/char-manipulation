@@ -12,7 +12,7 @@ class CharManipulation
 
     /**
      * @param $data
-     * @return array|string
+     * @return array|string|null
      */
     public static function specialCharsTrim($data)
     {
@@ -34,7 +34,7 @@ class CharManipulation
 
     /**
      * Make the htmlspecialchars_decode for all the values of $data reference, array string or null values.
-     * @param array|string $data
+     * @param $data
      */
     public static function specialCharsDecode(&$data): void
     {

@@ -1,0 +1,23 @@
+{
+  "name": "mulertech/char-manipulation",
+  "description": "This class manipulates chars",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sébastien Muler",
+      "email": "sebastien.muler@mulertech.net"
+    }
+  ],
+  "require": {
+    "php": "^7.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "MulerTech\\CharManipulation\\": "./"
+    }
+  }
+}
