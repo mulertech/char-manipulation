@@ -1,8 +1,8 @@
 <?php
 
-namespace mtphp\CharManipulation\Tests;
+namespace MulerTech\CharManipulation\Tests;
 
-use mtphp\CharManipulation\CharManipulation;
+use MulerTech\CharManipulation\CharManipulation;
 use PHPUnit\Framework\TestCase;
 
 class CharManipulationTest extends TestCase

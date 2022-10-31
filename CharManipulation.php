@@ -1,10 +1,10 @@
 <?php
 
-namespace mtphp\CharManipulation;
+namespace MulerTech\CharManipulation;
 
 /**
  * Class CharManipulation
- * @package mtphp\CharManipulation
+ * @package MulerTech\CharManipulation
  * @author Sébastien Muler
  */
 class CharManipulation
