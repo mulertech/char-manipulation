@@ -2,7 +2,7 @@
 
 ___
 
-This class manipulates chars
+This class manipulates characters
 
 ___
 

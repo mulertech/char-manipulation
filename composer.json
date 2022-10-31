@@ -1,6 +1,6 @@
 {
   "name": "mulertech/char-manipulation",
-  "description": "This class manipulates chars",
+  "description": "This class manipulates characters",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
