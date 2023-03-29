@@ -19,17 +19,18 @@ class CharManipulation
         if (is_array($data)) {
             array_walk_recursive(
                 $data,
-                static function (&$data) {
-                    $data = self::specialCharsTrim($data);
+                static function (&$value) {
+                    $value = self::specialCharsTrim($value);
                 }
             );
             return $data;
         }
 
-        if ($data !== null) {
+        if (is_string($data)) {
             return trim(htmlspecialchars(strip_tags($data), ENT_QUOTES, 'UTF-8', false));
         }
-        return null;
+        
+        return $data;
     }
 
     /**
@@ -38,19 +39,13 @@ class CharManipulation
      */
     public static function specialCharsDecode(&$data): void
     {
-        if (!is_array($data)) {
-            if (!is_null($data)) {
-                $data = htmlspecialchars_decode($data, ENT_QUOTES);
+        if (is_array($data)) {
+            foreach ($data as &$value) {
+                self::specialCharsDecode($value);
             }
-            return;
+        } elseif (!is_null($data)) {
+            $data = htmlspecialchars_decode($data, ENT_QUOTES);
         }
-
-        array_walk(
-            $data,
-            static function (&$data) {
-                self::specialCharsDecode($data);
-            }
-        );
     }
 
 }
