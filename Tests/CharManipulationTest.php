@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 class CharManipulationTest extends TestCase
 {
 
-    public function testSpecialCharsTrim()
+    public function testSpecialCharsTrim(): void
     {
         static::assertEquals(
             'Test without html balise',
@@ -23,7 +23,7 @@ class CharManipulationTest extends TestCase
         );
     }
 
-    public function testSpecialCharsTrimAndDecode()
+    public function testSpecialCharsTrimAndDecode(): void
     {
         $test = CharManipulation::specialCharsTrim("'test single quote");
         static::assertEquals('&#039;test single quote', $test);
@@ -31,28 +31,28 @@ class CharManipulationTest extends TestCase
         static::assertEquals("'test single quote", $test);
     }
 
-    public function testSpecialCharsDecodeString()
+    public function testSpecialCharsDecodeString(): void
     {
         $test = '&#039;test single quote';
         CharManipulation::specialCharsDecode($test);
         static::assertEquals("'test single quote", $test);
     }
 
-    public function testSpecialCharsDecodeNullValue()
+    public function testSpecialCharsDecodeNullValue(): void
     {
         $test = null;
         CharManipulation::specialCharsDecode($test);
         static::assertEquals(null, $test);
     }
 
-    public function testSpecialCharsDecodeSimpleArray()
+    public function testSpecialCharsDecodeSimpleArray(): void
     {
         $test = ['&#039;test single quote', 'test quote&quot;', 'with null', null];
         CharManipulation::specialCharsDecode($test);
         static::assertEquals(["'test single quote", 'test quote"', 'with null', null], $test);
     }
 
-    public function testSpecialCharsDecodeMultiDimensionalArray()
+    public function testSpecialCharsDecodeMultiDimensionalArray(): void
     {
         $test = [
             'test1' => '&#039;test single quote',

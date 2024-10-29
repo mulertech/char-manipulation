@@ -9,20 +9,16 @@ namespace MulerTech\CharManipulation;
  */
 class CharManipulation
 {
-
     /**
-     * @param $data
+     * @param array|string|null $data
      * @return array|string|null
      */
-    public static function specialCharsTrim($data)
+    public static function specialCharsTrim(array|string|null $data): array|string|null
     {
         if (is_array($data)) {
-            array_walk_recursive(
-                $data,
-                static function (&$value) {
-                    $value = self::specialCharsTrim($value);
-                }
-            );
+            array_walk_recursive($data, static function (&$value) {
+                $value = self::specialCharsTrim($value);
+            });
             return $data;
         }
 
@@ -35,15 +31,19 @@ class CharManipulation
 
     /**
      * Make the htmlspecialchars_decode for all the values of $data reference, array string or null values.
-     * @param $data
+     * @param array|string|null $data
      */
-    public static function specialCharsDecode(&$data): void
+    public static function specialCharsDecode(array|string|null &$data): void
     {
         if (is_array($data)) {
-            foreach ($data as &$value) {
+            array_walk_recursive($data, static function (&$value) {
                 self::specialCharsDecode($value);
-            }
-        } elseif (!is_null($data)) {
+            });
+
+            return;
+        }
+
+        if (!is_null($data)) {
             $data = htmlspecialchars_decode($data, ENT_QUOTES);
         }
     }
