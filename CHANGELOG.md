@@ -1,5 +1,9 @@
 # Release notes for char-manipulation
 
+## v1.0.4 - 2024-12-30
+
+v1.0.4
+
 ## v1.0.3 - 2024-10-29
 
 ## v1.0.2 - 2023-06-19
