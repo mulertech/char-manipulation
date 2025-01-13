@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736799116">
-  <project timestamp="1736799116">
+<coverage generated="1736800384">
+  <project timestamp="1736800384">
     <package name="MulerTech\CharManipulation">
-      <file name="/var/www/html/src/CharManipulation.php">
+      <file name="/home/runner/work/char-manipulation/char-manipulation/src/CharManipulation.php">
         <class name="MulerTech\CharManipulation\CharManipulation" namespace="MulerTech\CharManipulation">
           <metrics complexity="6" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
@@ -23,9 +23,9 @@
         <line num="43" type="stmt" count="2"/>
         <line num="46" type="stmt" count="5"/>
         <line num="47" type="stmt" count="4"/>
-        <metrics loc="52" ncloc="39" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
+        <metrics loc="51" ncloc="38" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
       </file>
     </package>
-    <metrics files="1" loc="52" ncloc="39" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
+    <metrics files="1" loc="51" ncloc="38" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
   </project>
 </coverage>
