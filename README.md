@@ -1,6 +1,12 @@
 # CharManipulation
 
 ___
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mulertech/char-manipulation.svg?style=flat-square)](https://packagist.org/packages/mulertech/char-manipulation)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mulertech/char-manipulation/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mulertech/char-manipulation/actions/workflows/tests.yml)
+[![GitHub PHPStan Action Status](https://img.shields.io/github/actions/workflow/status/mulertech/char-manipulation/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/mulertech/char-manipulation/actions/workflows/phpstan.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/mulertech/char-manipulation.svg?style=flat-square)](https://packagist.org/packages/mulertech/char-manipulation)
+[![Test Coverage](https://raw.githubusercontent.com/mulertech/char-manipulation/main/badge-coverage.svg)](https://packagist.org/packages/mulertech/char-manipulation)
+___
 
 This class manipulates characters
 

@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class CharManipulationTest extends TestCase
 {
-
     public function testSpecialCharsTrim(): void
     {
         static::assertEquals(
@@ -83,5 +82,4 @@ class CharManipulationTest extends TestCase
             $test
         );
     }
-
 }
