@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736800384">
-  <project timestamp="1736800384">
+<coverage generated="1736883838">
+  <project timestamp="1736883838">
     <package name="MulerTech\CharManipulation">
       <file name="/home/runner/work/char-manipulation/char-manipulation/src/CharManipulation.php">
         <class name="MulerTech\CharManipulation\CharManipulation" namespace="MulerTech\CharManipulation">
