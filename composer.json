@@ -12,10 +12,10 @@
     }
   ],
   "require": {
-    "php": "^8.3"
+    "php": "^8.4"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.6",
+    "friendsofphp/php-cs-fixer": "^3.0",
     "mulertech/docker-dev": "^3.2",
     "phpstan/phpstan": "^2.1",
     "phpunit/phpunit": "^12",
@@ -30,5 +30,8 @@
         "psr-4": {
         "MulerTech\\CharManipulation\\Tests\\": "./tests"
         }
-    }
+    },
+  "config": {
+    "sort-packages": true
+  }
 }
